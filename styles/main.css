@@ -10,6 +10,7 @@
   --color-text: #f6f6f9;
   --color-muted: #b6b6c6;
   --max-width: 1200px;
+  --page-gutter: clamp(1.25rem, 4vw, 3rem);
   --radius-lg: 32px;
   --radius-md: 20px;
   --radius-sm: 12px;
@@ -53,7 +54,8 @@ main {
   min-height: 88vh;
   display: grid;
   place-items: center;
-  padding: 4rem 1.5rem;
+  padding-block: clamp(4rem, 8vw, 6rem);
+  padding-inline: var(--page-gutter);
   isolation: isolate;
 }
 
@@ -179,14 +181,16 @@ h3 {
 }
 
 .section {
-  max-width: var(--max-width);
+  width: min(100%, var(--max-width));
   margin: 0 auto;
-  padding: 5rem 1.5rem;
+  padding-block: clamp(4rem, 7vw, 5.5rem);
+  padding-inline: var(--page-gutter);
 }
 
 .section__intro {
   max-width: 720px;
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem;
+  text-align: center;
 }
 
 .why {
@@ -404,6 +408,7 @@ h3 {
   display: flex;
   gap: 1.25rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hero__trust a {
@@ -435,7 +440,9 @@ h3 {
 
 .footer {
   background: #080811;
-  padding: 2.5rem 1.5rem 4.5rem;
+  width: min(100%, var(--max-width));
+  margin: 0 auto;
+  padding: clamp(2.5rem, 4vw, 3rem) var(--page-gutter) clamp(4.5rem, 7vw, 5rem);
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
@@ -506,6 +513,11 @@ h3 {
   .steps span {
     left: 50%;
     transform: translate(-50%, -10%);
+  }
+
+  .footer {
+    justify-content: center;
+    text-align: center;
   }
 }
 
