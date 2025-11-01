@@ -1,3 +1,14 @@
 ﻿title: "Adult Dating Hub"
 description: "Meet real singles tonight with Adult Dating Hub."
 permalink: pretty
+url: https://markvovk.github.io
+baseurl: /dating-app
+timezone: UTC
+exclude:
+  - README.md
+  - node_modules
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: null

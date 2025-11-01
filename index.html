@@ -1,3 +1,7 @@
+﻿---
+layout: null
+permalink: /
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,8 +12,15 @@
       name="description"
       content="Adult dating site for local singles. Chat instantly, match fast, and meet real people ready for chemistry tonight."
     />
-    <meta name="keywords" content="adult dating, dating site, casual dating, meet singles, hookup site, local dating, flirt chat" />
-    <link rel="canonical" href="https://m4w22r5.crazy-girlszones.com/l1cr71h" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="author" content="Adult Dating Hub Team" />
+    <meta name="theme-color" content="#0b0d17" />
+    {% assign canonical_host = site.url | default: 'https://markvovk.github.io' %}
+    {% if site.baseurl %}
+      {% assign canonical_host = canonical_host | append: site.baseurl %}
+    {% endif %}
+    <link rel="canonical" href="{{ canonical_host }}/" />
+    <link rel="alternate" hreflang="en" href="{{ canonical_host }}/" />
     <link rel="stylesheet" href="styles/main.css" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Meet Real Singles Tonight | Adult Dating Hub" />
@@ -17,51 +28,82 @@
       property="og:description"
       content="Thousands of local singles are online now. Join our adult dating community and start something exciting tonight."
     />
-    <meta property="og:url" content="https://m4w22r5.crazy-girlszones.com/l1cr71h" />
-    <meta property="og:image" content="assets/images/girl1.webp" />
+    <meta property="og:url" content="{{ canonical_host }}/" />
+    <meta property="og:site_name" content="Adult Dating Hub" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="{{ canonical_host }}/assets/images/girl1.webp" />
+    <meta property="og:image:alt" content="Confident woman smiling in a neon-lit lounge" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Adult Dating Hub | Meet Real Singles Tonight" />
     <meta
       name="twitter:description"
       content="Unlock a private, members-only dating experience made for bold connections."
     />
-    <meta name="twitter:image" content="assets/images/girl1.webp" />
+    <meta name="twitter:image" content="{{ canonical_host }}/assets/images/girl1.webp" />
     <link rel="icon" type="image/webp" href="assets/images/girl1.webp" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
+        "@graph": [
           {
-            "@type": "Question",
-            "name": "Is Adult Dating Hub free to join?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Creating your profile is free. Upgrade to unlock premium perks like unlimited chats, VIP placement, and boosted visibility."
+            "@type": "WebSite",
+            "@id": "{{ canonical_host }}/#website",
+            "url": "{{ canonical_host }}/",
+            "name": "Adult Dating Hub",
+            "description": "Adult dating site for local singles. Chat instantly, match fast, and meet real people ready for chemistry tonight.",
+            "inLanguage": "en-US",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "{{ canonical_host }}/?s={search_term_string}",
+              "query-input": "required name=search_term_string"
             }
           },
           {
-            "@type": "Question",
-            "name": "Who will I meet on Adult Dating Hub?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Adult Dating Hub brings together adventurous singles, couples, and curious newcomers looking for real chemistry, not endless swiping."
+            "@type": "Organization",
+            "@id": "{{ canonical_host }}/#organization",
+            "name": "Adult Dating Hub",
+            "url": "{{ canonical_host }}/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "{{ canonical_host }}/assets/images/girl1.webp"
             }
           },
           {
-            "@type": "Question",
-            "name": "Do I need to verify my account?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. Quick verification keeps the community authentic and safe, so real people can connect with confidence."
-            }
+            "@type": "FAQPage",
+            "@id": "{{ canonical_host }}/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is Adult Dating Hub free to join?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Creating your profile is free, and you can explore matches immediately. Upgrade when you want unlimited chats, VIP placement, and boosted visibility."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who will I meet on Adult Dating Hub?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Expect adventurous singles, confident couples, and curious newcomers nearby&mdash;all verified for authenticity and ready for genuine chemistry."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need to verify my account?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Fast photo and email verification keeps the community safe so you spend time chatting with real people instead of dodging fake profiles."
+                }
+              }
+            ]
           }
         ]
       }
     </script>
   </head>
   <body>
-    <header class="hero">
+    <header class="hero" id="top">
       <div class="hero__overlay"></div>
       <img
         class="hero__image"
@@ -73,12 +115,22 @@
         <p class="eyebrow">Exclusive Adult Dating</p>
         <h1>Meet Real Singles Tonight</h1>
         <p class="hero__lead">
-          Join thousands of adventurous locals ready to flirt, chat, and meet. No endless swiping—just real chemistry.
+          Join thousands of adventurous locals ready to flirt, chat, and meet. No endless swiping&mdash;just real chemistry.
         </p>
-        <a class="button button--primary" href="https://m4w22r5.crazy-girlszones.com/l1cr71h" target="_blank" rel="noopener">
+        <a
+          class="button button--primary"
+          href="https://m4w22r5.crazy-girlszones.com/l1cr71h"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+        >
           Start My Free Matchmaking
         </a>
-        <p class="hero__meta">18+ only · 3-minute signup · Private profiles</p>
+        <p class="hero__meta">18+ only &bull; 3-minute signup &bull; Private profiles</p>
+        <div class="hero__trust">
+          <a href="#why">Why choose us?</a>
+          <a href="#how">How it works</a>
+          <a href="#faq">FAQ</a>
+        </div>
       </div>
     </header>
 
@@ -91,7 +143,7 @@
         </ul>
       </section>
 
-      <section class="section why">
+      <section class="section why" id="why">
         <div class="section__intro">
           <h2>Why Adults Choose Our Dating Site</h2>
           <p>
@@ -115,11 +167,40 @@
         </div>
       </section>
 
-      <section class="section cta-block">
+      <section class="section trust-signals" id="safety">
+        <div class="section__intro">
+          <h2>Safety, Trust, and Real Connections</h2>
+          <p>
+            We designed Adult Dating Hub to feel as safe as it is exciting. Real moderation, privacy-first technology, and transparent
+            policies mean you can focus on meeting people you actually click with.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <h3>Verified Members Only</h3>
+            <p>Every profile passes a fast multi-step review to block bots, scams, and inactive accounts.</p>
+          </article>
+          <article>
+            <h3>Privacy-First Messaging</h3>
+            <p>Blurred photos, alias handles, and secure chat keep your identity hidden until you are ready to share.</p>
+          </article>
+          <article>
+            <h3>Dedicated Support</h3>
+            <p>Our concierge team monitors reports 24/7, so real members stay front-and-center and creeps get removed fast.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cta-block" id="cta">
         <div class="cta-block__content">
           <h2>Your Next Connection Is Seconds Away</h2>
-          <p>Skip the small talk—go straight to intimate, honest conversations with real people who want the same thing.</p>
-          <a class="button button--accent" href="https://m4w22r5.crazy-girlszones.com/l1cr71h" target="_blank" rel="noopener">
+          <p>Skip the small talk&mdash;go straight to intimate, honest conversations with real people who want the same thing.</p>
+          <a
+            class="button button--accent"
+            href="https://m4w22r5.crazy-girlszones.com/l1cr71h"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+          >
             Unlock My Matches
           </a>
         </div>
@@ -132,7 +213,7 @@
         </figure>
       </section>
 
-      <section class="section how">
+      <section class="section how" id="how">
         <h2>How Our Adult Dating Site Works</h2>
         <ol class="steps">
           <li>
@@ -153,7 +234,7 @@
         </ol>
       </section>
 
-      <section class="section gallery">
+      <section class="section gallery" id="stories">
         <h2>Real People. Real Stories.</h2>
         <div class="gallery__grid">
           <img src="assets/images/girl7.jpg" alt="Elegant woman striking a pose under neon lights" loading="lazy" />
@@ -170,25 +251,73 @@
         </div>
       </section>
 
-      <section class="section testimonials">
+      <section class="section insights" id="dating-guide">
+        <div class="section__intro">
+          <h2>Adult Dating Tips for Faster Chemistry</h2>
+          <p>
+            Stand out with a complete profile, lead with genuine conversation starters, and suggest a confident next step. These tips help
+            new members turn first chats into real-world meetups.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <h3>Write a Bold Bio</h3>
+            <p>Show your personality, your boundaries, and what kind of connection excites you. Specific details attract better matches.</p>
+          </article>
+          <article>
+            <h3>Send Intentional Messages</h3>
+            <p>Mention something from their profile, ask a playful question, and suggest moving to chat or video once the vibe is right.</p>
+          </article>
+          <article>
+            <h3>Plan the First Meetup</h3>
+            <p>Recommend a public venue, keep plans flexible, and share safety expectations so both of you feel comfortable meeting up.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section resources" id="resources">
+        <div class="section__intro">
+          <h2>Why Searchers Pick Adult Dating Hub</h2>
+          <p>
+            We optimize every profile, image, and conversation to help you connect faster. With high member activity and authentic reviews,
+            searchers see this page as a trusted path to real, adult-ready chemistry.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <h3>Locals-Only Matching</h3>
+            <p>Search engines love how we highlight proximity, making it easier for singles in your city to discover you.</p>
+          </article>
+          <article>
+            <h3>Fresh Content Updates</h3>
+            <p>We refresh this hub with success stories, safety reminders, and dating advice so search engines know it stays active.</p>
+          </article>
+          <article>
+            <h3>Transparent Policies</h3>
+            <p>Clear expectations, safety guidelines, and verified members help build trust with visitors and search engines alike.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section testimonials" id="reviews">
         <h2>Local Singles Love Adult Dating Hub</h2>
         <div class="testimonial">
           <blockquote>
-            “I met two amazing matches the first night I joined. The chemistry was instant and we met for drinks within 48 hours.”
+            "I met two amazing matches the first night I joined. The chemistry was instant and we met for drinks within 48 hours."
           </blockquote>
-          <p class="testimonial__meta">– Maya, 31 · Chicago</p>
+          <p class="testimonial__meta">- Maya, 31 &middot; Chicago</p>
         </div>
         <div class="testimonial">
           <blockquote>
-            “Finally, a hookup site that isn’t full of bots. Everyone I’ve met on here is legit and ready to connect.”
+            "Finally, a hookup site that isn't full of bots. Everyone I've met on here is legit and ready to connect."
           </blockquote>
-          <p class="testimonial__meta">– Chris, 35 · Austin</p>
+          <p class="testimonial__meta">- Chris, 35 &middot; Austin</p>
         </div>
         <div class="testimonial">
           <blockquote>
-            “The instant chat makes it so easy to move from matching to planning a date. It’s my go-to dating site now.”
+            "The instant chat makes it so easy to move from matching to planning a date. It's my go-to dating site now."
           </blockquote>
-          <p class="testimonial__meta">– Brielle, 28 · NYC</p>
+          <p class="testimonial__meta">- Brielle, 28 &middot; NYC</p>
         </div>
       </section>
 
@@ -202,8 +331,8 @@
             </button>
             <div class="accordion__content">
               <p>
-                Creating your profile is free. You can browse and flirt right away, then upgrade any time for unlimited chats and priority
-                placement.
+                Creating your profile is free. Browse matches instantly, then upgrade any time for unlimited chats, VIP placement, and boosted
+                visibility.
               </p>
             </div>
           </article>
@@ -214,7 +343,8 @@
             </button>
             <div class="accordion__content">
               <p>
-                Our members include confident singles, couples, and curious newcomers—all vetted, fun, and ready for thrilling connections.
+                Meet adventurous singles, confident couples, and curious newcomers&mdash;all reviewed by our team to make sure everyone is real,
+                respectful, and here for genuine chemistry.
               </p>
             </div>
           </article>
@@ -225,8 +355,8 @@
             </button>
             <div class="accordion__content">
               <p>
-                Most profiles are verified in under five minutes. Verification keeps the community real so your time is spent on genuine
-                chemistry.
+                Most profiles are verified in under five minutes. Fast photo and email checks keep the community real so you spend time on
+                conversations that matter.
               </p>
             </div>
           </article>
@@ -235,17 +365,35 @@
     </main>
 
     <footer class="footer">
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="#why">Why Choose Us</a>
+        <a href="#how">How It Works</a>
+        <a href="#dating-guide">Dating Tips</a>
+        <a href="#faq">FAQ</a>
+      </nav>
       <div class="footer__legal">
-        <p>© <span id="year"></span> Adult Dating Hub. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Adult Dating Hub. All rights reserved.</p>
         <p>Adults 18+ only. Please date responsibly.</p>
       </div>
-      <a class="button button--primary footer__cta" href="https://m4w22r5.crazy-girlszones.com/l1cr71h" target="_blank" rel="noopener">
+      <a
+        class="button button--primary footer__cta"
+        href="https://m4w22r5.crazy-girlszones.com/l1cr71h"
+        target="_blank"
+        rel="nofollow sponsored noopener"
+      >
         Start My Free Matchmaking
       </a>
     </footer>
 
     <div class="sticky-cta">
-      <a class="button button--accent" href="https://m4w22r5.crazy-girlszones.com/l1cr71h" target="_blank" rel="noopener"> Browse Singles Near Me </a>
+      <a
+        class="button button--accent"
+        href="https://m4w22r5.crazy-girlszones.com/l1cr71h"
+        target="_blank"
+        rel="nofollow sponsored noopener"
+      >
+        Browse Singles Near Me
+      </a>
     </div>
 
     <script src="scripts/main.js" defer></script>

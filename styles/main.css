@@ -399,6 +399,40 @@ h3 {
   display: block;
 }
 
+.hero__trust {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.hero__trust a {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.hero__trust a:hover,
+.hero__trust a:focus {
+  text-decoration: underline;
+}
+
+.section.trust-signals,
+.section.insights,
+.section.resources {
+  background: rgba(8, 8, 17, 0.9);
+}
+
+.section.trust-signals .feature-grid article,
+.section.insights .feature-grid article,
+.section.resources .feature-grid article {
+  background: rgba(17, 17, 27, 0.85);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
 .footer {
   background: #080811;
   padding: 2.5rem 1.5rem 4.5rem;
@@ -409,6 +443,26 @@ h3 {
   justify-content: space-between;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   position: relative;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__nav a {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer__nav a:hover,
+.footer__nav a:focus {
+  color: #fff;
 }
 
 .footer__legal p {
