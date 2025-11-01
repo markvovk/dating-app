@@ -1,0 +1,17 @@
+﻿---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{% assign canonical_host = site.url | default: 'https://markvovk.github.io' %}
+{% if site.baseurl %}
+  {% assign canonical_host = canonical_host | append: site.baseurl %}
+{% endif %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ canonical_host }}/</loc>
+    <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
